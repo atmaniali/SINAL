@@ -1,0 +1,17 @@
+{% extends "basic.html" %}
+
+{% block title %}Index{% endblock title %}
+
+{% block body %}
+<div class='container-fluid'>
+    {% load static %}
+<img src="{% static 'image/slide_001-980x400.jpg' %}" alt="" class="img-fluid w-100 h-100">
+
+</div>
+
+<br> <br>
+
+<!-- feautures -->
+{% include 'feautures.html' %}
+
+{% endblock body %}

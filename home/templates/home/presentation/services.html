@@ -1,0 +1,37 @@
+{% extends 'basic.html' %}
+
+{% block meta %}
+<meta name="description" content="Services : Sinal : Division des Etudes et de Réalisation en Engineering Scientifique">
+{% endblock meta %}
+
+{% block title %}Presentation | Services{% endblock title %}
+
+{% block body %}
+<div class="container">
+    <br> <br>
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow-lg p-3 mb-5 bg-body rounded">
+                <div class="card-body">
+                    <h1 class="card-title">Services</h1>
+                    <br>
+                    <h3 class="card-subtitle">Nos services</h3>
+                    <hr class="border border-primary border-2 opacity-50">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa provident necessitatibus magnam consequuntur.</p>
+                    {% load static %}
+                    <img src="{% static 'image/missions.png' %}" alt="image" class=" d-sm-none d-md-block rounded float-end">
+                    <ul class="card-text">
+                        <li>Occaecat cillum occaecat et aliquip irure minim do aliquip pariatur proident.</li>
+                        <li>Occaecat cillum occaecat et aliquip irure minim do aliquip pariatur proident.</li>
+                        <li>Occaecat cillum occaecat et aliquip irure minim do aliquip pariatur proident.</li>
+                        <li>Occaecat cillum occaecat et aliquip irure minim do aliquip pariatur proident.</li>
+                        <li>Occaecat cillum occaecat et aliquip irure minim do aliquip pariatur proident.</li>
+                        <li>Occaecat cillum occaecat et aliquip irure minim do aliquip pariatur proident.</li>
+                    </ul>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, sunt. Excepturi ea dicta nam dolore sequi tempore laborum eaque odio. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

@@ -1,0 +1,94 @@
+<nav class="navbar navbar-expand-lg bg-light " id= "navigate">
+    <div class="container-fluid">
+
+      {% comment %} logo {% endcomment %}
+      <a class="navbar-brand logo fs-3 fw-bold" href="{% url 'index' %}">Sinal</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          {% comment %} Acceuil {% endcomment %}
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'index'%}">Acceuil</a>
+          </li>
+
+          {% comment %} Présentation {% endcomment %}
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Présentation
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="{% url 'missions' %}">Missions</a></li>
+              <li><a class="dropdown-item" href="{% url 'services' %}">Services</a></li>
+              <li><a class="dropdown-item" href="{% url 'certafication' %}">Certifications</a></li>
+              <li><a class="dropdown-item" href="{% url 'chiffres-cles' %}">Chiffres clés</a></li>
+            </ul>
+          </li>
+
+          {% comment %} Produits {% endcomment %}
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Produits
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="{% url 'instrumentation-analytique' %}">Instrumentation analytique</a></li>
+              <li><a class="dropdown-item" href="{% url 'ECL' %}">Équipements & consommable de laboratoire</a></li>
+              <li><a class="dropdown-item" href="#">Sciences de l’ingénierie</a></li>
+              <li><a class="dropdown-item nav-link dropdown-toggle " role="button" data-bs-toggle="dropdown" href="#" aria-expanded="false">Opto</a>
+                {% comment %} Opto {% endcomment %}
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Préparation des échantillons</a></li>
+                  <li><a class="dropdown-item" href="#">Mesure et caractérisation</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          {% comment %} Références {% endcomment %}
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Références
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="{% url 'EDP' %}">Equipements didactiques et pédagogiques</a></li>
+              <li><a class="dropdown-item" href="{% url 'ESL' %}">Equipements scientifiques de laboratoires</a></li>
+            </ul>
+          </li>
+
+          {% comment %} Service après vente {% endcomment %}
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Service après vente
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="{% url 'FDD' %}">Formulaire demande d’intervention</a></li>
+            </ul>
+          </li>
+
+          {% comment %} Commercial {% endcomment %}
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Commercial
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="{% url 'FDDevis' %}">Formulaire demande de devis</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'coordonnees' %}">Nos coordonnées</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
